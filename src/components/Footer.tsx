@@ -4,7 +4,7 @@ import LanguageSwitchLink from './LanguageSwitchLink'
 import pkg from 'next-i18next/package.json'
 import pkgLD from 'next-language-detector/package.json'
 
-import i18nextConfig from '../next-i18next.config'
+import i18nextConfig from '../../next-i18next.config'
 
 export const Footer = () => {
   const router = useRouter()
