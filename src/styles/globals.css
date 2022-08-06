@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .clip-video {
+    mask: url(/mask.svg);
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+  }
+}
