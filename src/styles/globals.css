@@ -1,12 +1,24 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
+
+#__next {
+  @apply h-full;
+}
+html,
+body {
+  @apply h-full;
+}
 
 @layer utilities {
-  .clip-video {
+  .mask-video {
     mask: url(/mask.svg);
     mask-position: center center;
     mask-repeat: no-repeat;
     mask-size: contain;
+  }
+
+  .video-border {
+    filter: drop-shadow(10px 10px white);
   }
 }
