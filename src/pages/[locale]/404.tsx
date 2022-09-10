@@ -1,7 +1,7 @@
 import { useTranslation } from "next-i18next";
 import { getStaticPaths, makeStaticProps } from "../../lib/getStatic";
 
-import { Header } from "../../components/Header";
+import { MobileNav } from "../../components/MobileNav";
 import { Footer } from "../../components/Footer";
 
 import Link from "../../components/Link";
@@ -12,7 +12,7 @@ const Homepage = () => {
   return (
     <>
       <main>
-        <Header heading={t("h1")} title={t("title")} />
+        <MobileNav />
         <div>
           <Link skipLocaleHandling={false} href="/">
             <button type="button">{t("common:back-to-home")}</button>

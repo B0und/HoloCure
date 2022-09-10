@@ -11,14 +11,22 @@ body {
 }
 
 @layer utilities {
-  .mask-video {
-    mask: url(/mask.svg);
-    mask-position: center center;
-    mask-repeat: no-repeat;
-    mask-size: contain;
+  .bleed-wrapper {
+    --breathing-room: 16px;
+    display: grid;
+    grid-template-columns:
+      1fr
+      90%
+      1fr;
+    padding-left: var(--breathing-room);
+    padding-right: var(--breathing-room);
   }
-
-  .video-border {
-    filter: drop-shadow(10px 10px white);
+  .bleed-wrapper > * {
+    grid-column: 2;
+  }
+  .full-bleed {
+    grid-column: 1 / -1;
+    margin-left: calc(var(--breathing-room) * -1);
+    margin-right: calc(var(--breathing-room) * -1);
   }
 }
