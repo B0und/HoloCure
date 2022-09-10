@@ -20,10 +20,10 @@ export const MobileNav: React.FC<IMobileMenu> = ({ isOpen, onDismiss }) => {
       isOpen={isOpen}
       onDismiss={onDismiss}
     >
-      <div className="fadeIn absolute top-0 left-0 right-0 bottom-0 bg-black opacity-70" />
+      <div className="absolute top-0 left-0 right-0 bottom-0 animate-fadeIn bg-black opacity-70" />
       <DialogContent
         aria-label="Menu"
-        className="relative mr-[-16px] h-full w-[266px] bg-[#309AE0] py-6 px-8"
+        className="relative mr-[-16px] h-full w-[266px] animate-slideIn bg-[#309AE0] py-6 px-8 "
       >
         <div className="flex h-full flex-col content-center">
           <button

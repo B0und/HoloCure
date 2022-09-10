@@ -7,19 +7,19 @@ module.exports = {
       inter: ["Inter", "sans-serif"],
     },
     extend: {
-      animation: {
-        slideIn: "slideIn 500ms both cubic-bezier(0, 0.6, 0.32, 1.06)",
-        fadeIn: "fadeIn 600ms both",
-      },
       keyframes: {
         fadeIn: {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 },
+          from: { opacity: "0" },
+          to: { opacity: "0.7" },
         },
         slideIn: {
-          "0%": { translateX: "100%" },
-          "100%": { translateX: "0%" },
+          from: { transform: "translateX(100%)" },
+          to: { transform: "translateX(0%)" },
         },
+      },
+      animation: {
+        slideIn: "slideIn 500ms 200ms both",
+        fadeIn: "fadeIn 600ms 400ms both",
       },
     },
   },

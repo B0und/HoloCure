@@ -34,11 +34,10 @@ const Homepage = () => {
 
       <div className="bleed-wrapper ml-auto mr-auto ">
         <div className="full-bleed  bg-[#1A4762] py-48">
-          <div className="-translate-x-1/2 rounded-full bg-[#f1f1f1] p-4 text-[#1A4762]">
-            <h2 className="ml-40 translate-x-1/2 pr-14 font-pop text-6xl  font-semibold">
-              Welcome to HoloCure!
-            </h2>
-          </div>
+          <h2 className="inline-block  h-8 rounded-full bg-[#f1f1f1] text-[#1A4762]">
+            <span className="mx-6 font-pop text-xl font-semibold">Welcome to HoloCure!</span>
+          </h2>
+
           <p className="ml-32 max-w-prose text-white">
             This is a completely free, unofficial fangame featuring the vtuber talents of Hololive,
             with gameplay that is heavily inspired by Vampire Survivors and Magic Survival. Collect
