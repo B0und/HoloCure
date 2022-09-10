@@ -33,19 +33,22 @@ const Homepage = () => {
       <HeroSection />
 
       <div className="bleed-wrapper ml-auto mr-auto ">
-        <div className="full-bleed  bg-[#1A4762] py-48">
-          <h2 className="inline-block  h-8 rounded-full bg-[#f1f1f1] text-[#1A4762]">
-            <span className="mx-6 font-pop text-xl font-semibold">Welcome to HoloCure!</span>
+        <div className="full-bleed  flex flex-col items-start gap-8 bg-[#1A4762] py-16 px-6">
+          <h2 className="-ml-10 flex h-9 items-center rounded-full bg-[#f1f1f1] text-[#1A4762]">
+            <span className="mx-6 ml-10 font-pop text-xl font-semibold ">Welcome to HoloCure!</span>
           </h2>
 
-          <p className="ml-32 max-w-prose text-white">
+          <p className=" max-w-prose text-base text-[#e9e9e9]">
             This is a completely free, unofficial fangame featuring the vtuber talents of Hololive,
-            with gameplay that is heavily inspired by Vampire Survivors and Magic Survival. Collect
-            powerful weapons and items and experiment with all kinds of builds to create the
+            with gameplay that is heavily inspired by Vampire Survivors and Magic Survival. <br />
+            Collect powerful weapons and items and experiment with all kinds of builds to create the
             ultimate character! Will you be able to defeat the endless waves of enemies, and reach
             the top rankings?
           </p>
-          <button className="rounded-full bg-white p-4 uppercase">play now</button>
+          <button className="fancy-shadow h-9 rounded-full bg-white py-1 px-10 text-base font-bold uppercase transition-all">
+            <span className="text-[#FF9EC6]">play </span>
+            <span className="text-[#45B7F4] ">now</span>
+          </button>
         </div>
 
         <Footer />

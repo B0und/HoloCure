@@ -30,5 +30,11 @@ body {
     margin-right: calc(var(--breathing-room) * -1);
   }
 
-
+  .fancy-shadow {
+    box-shadow: 2px 6px #45b7f4;
+  }
+  .fancy-shadow:hover {
+    transform: translateY(4px);
+    box-shadow: 0px 0px #45b7f4;
+  }
 }
