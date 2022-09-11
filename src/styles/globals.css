@@ -31,7 +31,7 @@ body {
   }
 
   .fancy-shadow {
-    box-shadow: 2px 6px #45b7f4;
+    box-shadow: 1px 4px #45b7f4;
   }
   .fancy-shadow:hover {
     transform: translateY(4px);
