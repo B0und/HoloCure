@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       pop: ["Poppins", "sans-serif"],
       inter: ["Inter", "sans-serif"],
+      vt: ["VT323", "monospace"],
     },
     extend: {
       keyframes: {
