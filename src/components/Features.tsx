@@ -69,7 +69,7 @@ const Features = () => {
             alt="Calliope Mori using her ultimate skill, which summons a huge death god, giving her a buff."
           />
           <p className="-ml-20 rounded-lg bg-white py-2 px-4 text-xs font-medium text-[#1A4762] ">
-            Unique skills and special attacks for every character
+            Hidden mechanics
           </p>
         </div>
       </div>

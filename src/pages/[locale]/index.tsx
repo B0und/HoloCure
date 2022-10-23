@@ -9,6 +9,7 @@ import LogoSection from "../../components/LogoSection";
 import { GiHamburgerMenu } from "react-icons/gi";
 import HeroSection from "../../components/HeroSection";
 import Features from "../../components/Features";
+import CharactersSection from "../../components/Characters";
 
 const Homepage = () => {
   const { t } = useTranslation(["common", "footer"]);
@@ -36,6 +37,7 @@ const Homepage = () => {
       <div className="flex flex-col gap-16">
         <HeroSection />
         <Features />
+        <CharactersSection />
       </div>
       <Footer />
     </div>
