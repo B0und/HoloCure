@@ -14,7 +14,7 @@ import ParticlesComponent from "../components/ParticlesComponent";
 // import "swiper/css/scrollbar";
 
 // import "@splidejs/react-splide/css";
-import "@splidejs/react-splide/css/core";
+// import "@splidejs/react-splide/css/core";
 
 const MyApp = ({ Component, pageProps }) => {
   return (

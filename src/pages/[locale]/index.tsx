@@ -10,6 +10,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import HeroSection from "../../components/HeroSection";
 import Features from "../../components/Features";
 import CharactersSection from "../../components/Characters";
+import BottomCtaCard from "../../components/BottomCtaCard";
 
 const Homepage = () => {
   const { t } = useTranslation(["common", "footer"]);
@@ -38,8 +39,8 @@ const Homepage = () => {
         <HeroSection />
         <Features />
         <CharactersSection />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };

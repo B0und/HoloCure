@@ -6,14 +6,18 @@ interface IRoundedButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isActive: boolean;
 }
 const RoundedButton = (props: IRoundedButton) => {
+  const { isActive, text, ...buttonProps } = props;
   return (
     <button
-      {...props}
-      className={clsx("whitespace-nowrap rounded-full border-2 border-white py-1 px-3 text-white", {
-        "border-[#FF9EC6] text-[#FF9EC6]": props.isActive,
-      })}
+      {...buttonProps}
+      className={clsx(
+        "whitespace-nowrap rounded-full border-2 border-white py-1 px-3 text-sm text-white",
+        {
+          "border-[#FF9EC6] text-[#FF9EC6]": isActive,
+        }
+      )}
     >
-      {props.text}
+      {text}
     </button>
   );
 };
@@ -56,10 +60,10 @@ const CharactersSection = () => {
   return (
     <section className="bleed-wrapper  ">
       <div className="full-bleed  flex flex-col items-start gap-8 bg-[#1A4762] py-8 px-6">
-        <h2 className="mx-auto mt-[-52px] flex h-11 w-fit items-center rounded-full bg-[#f1f1f1] px-6 py-1 text-xl font-semibold text-[#1A4762]">
+        <h2 className="mx-auto mt-[-52px] flex h-11 w-fit items-center rounded-full bg-[#f1f1f1] px-6 py-1 text-xl font-semibold text-[#1A4762]  md:h-14 md:px-10 md:text-3xl">
           Choose your idol
         </h2>
-        <div className="mx-auto flex flex-wrap gap-3">
+        <div className="mx-auto flex flex-wrap items-center justify-center gap-3">
           {GENS.map((gen, ind) => (
             <RoundedButton
               text={gen}

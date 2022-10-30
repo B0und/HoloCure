@@ -13,7 +13,7 @@ const WeaponCard = ({ title, description, src, alt, className }: IWeaponCard) =>
   return (
     <div
       className={clsx(
-        "min-w-fit rounded-lg bg-[#4abef9] p-1 font-vt text-base text-white",
+        "min-w-fit max-w-[225px] rounded-lg bg-[#4abef9] p-1 font-vt text-base text-white",
         className
       )}
     >
