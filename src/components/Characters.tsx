@@ -59,7 +59,7 @@ const CharactersSection = () => {
 
   return (
     <section className="bleed-wrapper  ">
-      <div className="full-bleed  flex flex-col items-start gap-8 bg-[#1A4762] py-8 px-6">
+      <div className="full-bleed  ">
         <h2 className="mx-auto mt-[-52px] flex h-11 w-fit items-center rounded-full bg-[#f1f1f1] px-6 py-1 text-xl font-semibold text-[#1A4762]  md:h-14 md:px-10 md:text-3xl">
           Choose your idol
         </h2>

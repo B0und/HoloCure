@@ -18,8 +18,8 @@ const HeroSection = () => {
           top rankings?
         </p>
         <button className="fancy-shadow flex h-6 items-center rounded-full bg-white py-1 px-10 font-pop text-base font-bold uppercase transition-all md:py-4 md:px-16 md:text-lg">
-          <span className="text-[#FF9EC6]">play </span>
-          <span className="ml-1 text-[#45B7F4]">now</span>
+          <span className="text-[#45B7F4]">play </span>
+          <span className="ml-1 text-[#FF9EC6]">now</span>
         </button>
 
         <div className="flex flex-col gap-4">

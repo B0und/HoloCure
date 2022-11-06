@@ -13,7 +13,7 @@ export const Footer = () => {
 
   return (
     <footer className="bleed-wrapper">
-      <div className="full-bleed flex flex-wrap items-start justify-center gap-8 bg-[#1A4762] py-8 px-6">
+      <div className="full-bleed flex flex-col flex-wrap items-center justify-center gap-8 bg-[#1A4762] py-8 px-6">
         <div className="flex flex-wrap items-center justify-center gap-6">
           <img
             className=" w-[200px] max-w-[75%] object-contain"

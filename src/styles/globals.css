@@ -28,6 +28,7 @@ body {
     grid-column: 1 / -1;
     margin-left: calc(var(--breathing-room) * -1);
     margin-right: calc(var(--breathing-room) * -1);
+    @apply flex flex-col items-start gap-8 bg-[#1A4762] py-8 px-6 md:py-12 md:px-12;
   }
 
   .fancy-shadow {
